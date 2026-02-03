@@ -1,0 +1,20 @@
+CREATE TABLE salesman(
+    salesman_id int PRIMARY KEY,
+    salesman_name VARCHAR2(32),
+    salesman_city VARCHAR2(32),
+    commission int
+                   );
+
+
+INSERT INTO salesman VALUES(5001,'JamesHoog','Newyork',15);
+INSERT INTO salesman VALUES(5002,'NailKnite','Paris',13);
+INSERT INTO salesman VALUES(5005,'PitAlex','London',11);
+INSERT INTO salesman VALUES(5006,'McLyon','Paris',14);
+INSERT INTO salesman VALUES(5007,'PaulAdam','Rome',13);
+INSERT INTO salesman VALUES(5003,'LausonHen','SanJose',12);
+
+DROP TABLE salesman;
+SELECT * FROM salesman;
+SELECT salesman_id, salesman_city FROM salesman;
+SELECT *FROM salesman WHERE salesman_city='Paris';
+SELECT salesman_id ,commission FROM salesman WHERE salesman_name='PaulAdam';
